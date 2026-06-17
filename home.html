@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srijan Education Consultancy</title>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+.animate{
+opacity:0;
+transform:translateY(50px);
+transition:all .3s ease;
+}
+
+.animate.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.founder-card,
+.service-box,
+.feature,
+.preview-card{
+transition:all .4s ease;
+}
+.founders-section{
+
+    width:100%;
+    padding:80px 60px;
+
+    background:linear-gradient(135deg,#08264b,#0a355d);
+
+    color:white;
+
+}
+
+.s-section h2{
+
+    text-align:center;
+
+    font-size:48px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#dbeafe;
+
+    font-size:18px;
+
+    margin-bottom:70px;
+
+}
+
+.founder-content h3{
+
+    color:white;
+
+    font-size:52px;
+
+    margin-bottom:15px;
+
+}
+
+.founder-content h4{
+
+    color:#ff9800;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+
+}
+
+.qualification{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+    font-weight:bold;
+
+}
+
+.typing{
+
+    color:#f5f5f5;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+}
+
+.typing span{
+
+    border-right:3px solid #ff9800;
+
+    animation:blink .8s infinite;
+
+}
+
+.founder-photo img{
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+
+    transition:.4s;
+
+}
+
+.founder-photo img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.founder-row{
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+    padding-bottom:70px;
+
+    margin-bottom:70px;
+
+}
+
+.founder-row:last-child{
+
+    border:none;
+
+    margin-bottom:0;
+
+}
+
+.founder-card:hover,
+.service-box:hover,
+.feature:hover,
+.preview-card:hover{
+transform:translateY(-10px);
+box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+header img{
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+header{
+animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f6f8;
+color:#333;
+}
+
+.login-btn,
+.register-btn{
+background:white;
+color:#0a2e5c !important;
+padding:10px 18px;
+border-radius:8px;
+font-weight:bold;
+margin-left:10px;
+text-decoration:none;
+transition:.3s;
+}
+
+.login-btn:hover,
+.register-btn:hover{
+background:#ffd700;
+transform:translateY(-2px);
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#08264b;
+padding:15px;
+text-align:center;
+position:fixed;
+top:0;
+z-index:1000;
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-box img{
+width:60px;
+height:60px;
+border-radius:10px;
+}
+
+.logo-box h2{
+color:white;
+font-size:30px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+}
+
+.navbar a:hover{
+color:#ffd700;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+background:#0a2e5c;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 50px;
+z-index:1000;
+box-shadow:0 2px 15px rgba(0,0,0,.2);
+}
+
+.navbar{
+    background:#08264b;
+    padding:15px;
+    text-align:center;
+    position:fixed;
+    top:0;
+    z-index:1000;
+    position:relative;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0a2e5c;
+    padding: 24px 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* 🔥 important */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 2500;
+    white-space: nowrap; /* 🔥 THIS FIXES TOPPERS + SEMINARS */
+}
+
+.auth-area{
+    display:flex;
+    gap:12px;
+    position:absolute;
+    right:25px;
+    top:10px;
+}
+
+.signup-btn{
+    background:#6d28d9;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login-btn-new{
+    background:#6d28d9;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#0a2e5c,#123f7a);
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+header img{
+width:140px;
+height:140px;
+object-fit:contain;
+background:white;
+padding:10px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+font-style:italic;
+}
+
+/* SECTION */
+
+section{
+    width:100%;
+    max-width:100%;
+    margin:0;
+    padding:60px 50px;
+    background:white;
+    border-radius:0;
+    box-shadow:none;
+}
+
+section h2{
+text-align:center;
+color:#0a2e5c;
+margin-bottom:25px;
+}
+
+/* ABOUT */
+
+.about{
+width:100%;
+max-width:100%;
+text-align:center;
+line-height:1.8;
+}
+
+.about h3{
+color:#0a2e5c;
+margin-top:20px;
+}
+
+/* FOUNDERS */
+
+.founders{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+width:100%;
+}
+
+.founder-card{
+width:280px;
+text-align:center;
+}
+
+.founder-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.founder-card h3{
+margin-top:15px;
+color:#0a2e5c;
+}
+
+.founders-section h2{
+    text-align:center;
+    font-size:50px;
+    color:#ffffff;
+}
+
+.subtitle{
+
+text-align:center;
+font-size:20px;
+margin:20px 0 70px;
+color:#dbeafe;
+
+}
+
+.founder-row{
+    display:flex;
+    align-items:center;
+    gap:70px;
+    margin:80px 0;
+}
+
+.founder-photo{
+    flex:1;
+}
+
+.founder-photo img{
+    width:100%;
+    max-width:550px;
+    display:block;
+    margin:auto;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.founder-photo img:hover{
+    transform:scale(1.03);
+}
+
+.founder-content{
+    flex:1.2;
+}
+
+.founder-content h3{
+    font-size:58px;
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+.founder-content h4{
+    color:#ff6b00;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.typing{
+    margin-top:30px;
+    font-size:22px;
+    line-height:1.8;
+    color:white;
+}
+.typing span{
+
+border-right:3px solid #ff9800;
+padding-right:4px;
+animation:blink .8s infinite;
+
+}
+
+.reverse{
+flex-direction:row-reverse;
+}
+
+@media(max-width:900px){
+
+.reverse{
+flex-direction:column;
+}
+
+}
+
+@keyframes blink{
+
+50%{
+
+border-color:transparent;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.founder-row,
+.reverse{
+
+flex-direction:column;
+
+}
+
+.founder-content{
+
+text-align:center;
+
+}
+
+.founders-section{
+
+padding:60px 20px;
+
+}
+
+.founder-content h3{
+
+font-size:30px;
+
+}
+
+}
+
+/* COURSES */
+
+.services{
+width:100%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.service-box{
+background:#f8f9fb;
+padding:20px;
+border-left:5px solid #0a2e5c;
+border-radius:10px;
+}
+
+.service-box h3{
+color:#0a2e5c;
+margin-bottom:10px;
+}
+
+.service-box ul{
+padding-left:20px;
+}
+
+/* WHY CHOOSE US */
+
+.why{
+max-width:800px;
+margin:auto;
+}
+
+.feature{
+display:flex;
+align-items:center;
+gap:20px;
+background:#f8f9fb;
+padding:18px;
+margin-bottom:15px;
+border-radius:12px;
+}
+
+.icon{
+width:70px;
+height:70px;
+background:#0a2e5c;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+color:white;
+flex-shrink:0;
+}
+
+.text h3{
+color:#0a2e5c;
+margin-bottom:5px;
+}
+
+/* TOPPERS & SEMINARS */
+
+.preview-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.preview-card{
+background:#f8f9fb;
+padding:20px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.preview-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.preview-card h3{
+color:#0a2e5c;
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 22px;
+background:#0a2e5c;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#123f7a;
+}
+.work-process{
+background:#0a355d;
+padding:90px 70px;
+color:white;
+margin-top:50px;
+}
+
+.work-process h2{
+text-align:center;
+font-size:42px;
+margin-bottom:70px;
+color:white;
+}
+
+.process-wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:100px;
+max-width:1400px;
+margin:auto;
+}
+
+.timeline{
+position:relative;
+}
+
+.timeline::before{
+content:'';
+position:absolute;
+left:34px;
+top:20px;
+bottom:20px;
+width:2px;
+border-left:2px dotted rgba(255,255,255,.4);
+}
+
+.timeline-item{
+display:flex;
+align-items:flex-start;
+gap:30px;
+margin-bottom:70px;
+position:relative;
+}
+
+.timeline-icon{
+width:70px;
+height:70px;
+background:#ff5a0a;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+z-index:2;
+box-shadow:0 0 25px rgba(255,90,10,.4);
+transition:.4s;
+}
+
+.timeline-item:hover .timeline-icon{
+transform:scale(1.1);
+}
+
+.timeline-content h3{
+font-size:18px;
+font-weight:700;
+margin-bottom:10px;
+text-transform:uppercase;
+}
+
+.timeline-content p{
+font-size:17px;
+line-height:1.8;
+color:#f0f0f0;
+max-width:500px;
+}
+
+.process-info{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.info-block{
+margin-bottom:80px;
+}
+
+.info-block h3{
+font-size:40px;
+font-weight:400;
+margin-bottom:25px;
+line-height:1.4;
+}
+
+.info-block p{
+font-size:18px;
+line-height:2;
+color:#f0f0f0;
+}
+
+.info-block:hover{
+transform:translateY(-5px);
+transition:.4s;
+}
+
+.picnic-track{
+display:flex;
+width:max-content;
+animation:slideright 35s linear infinite;
+}
+
+@keyframes slideright{
+
+0%{
+transform:translateX(-50%);
+}
+
+100%{
+transform:translateX(0);
+}
+
+}
+
+/* Fade Up Animation */
+
+.animate{
+opacity:0;
+transform:translateY(80px);
+transition:all .8s ease;
+}
+
+.animate.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.process-wrapper{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.work-process{
+padding:60px 25px;
+}
+
+.work-process h2{
+font-size:30px;
+}
+
+.info-block h3{
+font-size:28px;
+}
+
+.timeline-content p{
+font-size:15px;
+}
+
+}
+
+.contact-footer{
+    background:#0a2e5c;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,0.15);
+}
+
+.contact-footer p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.contact-footer i{
+    color:#ff6b00;
+    margin-right:10px;
+    font-size:20px;
+}
+
+.contact-footer a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.contact-footer a:hover{
+    color:#ff9800;
+}
+
+.event-section{
+    width:100%;
+    margin:0;
+    padding:60px 30px;
+    background:#f4f6f8;
+    overflow:hidden;
+}
+
+.event-section h2{
+    text-align:center;
+    color:#0a2e5c;
+    font-size:50px;
+    margin-bottom:35px;
+}
+
+.slider{
+    overflow:hidden;
+    width:100%;
+    position:relative;
+}
+
+.slide-track{
+    display:flex;
+    width:max-content;
+    animation:scroll 40s linear infinite;
+}
+
+.picnic-track{
+    display:flex;
+    width:max-content;
+    animation:scroll2 40s linear infinite;
+}
+
+.slide{
+    margin:0 12px;
+    flex-shrink:0;
+}
+
+.slide img{
+    width:320px;
+    height:220px;
+    object-fit:cover;
+
+    border-radius:20px;
+
+    background:white;
+    padding:8px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.4s;
+}
+
+.slide img:hover{
+    transform:scale(1.08);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+@keyframes scroll2{
+
+0%{
+transform:translateX(-50%);
+}
+
+100%{
+transform:translateX(0);
+}
+
+}
+
+/* FOOTER */
+
+footer{
+background:#0a2e5c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:28px;
+}
+
+.feature{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+.social-footer{
+background:#ffffff;
+padding:70px 80px;
+color:#333;
+border-top:1px solid #ddd;
+}
+
+.footer-container{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:80px;
+align-items:start;
+}
+
+.footer-left h2{
+font-size:48px;
+font-weight:300;
+line-height:1.2;
+margin-bottom:20px;
+color:#ff6b00;
+text-shadow:0 0 10px rgba(255,107,0,.4);
+}
+
+.footer-left p{
+font-size:18px;
+line-height:1.8;
+color:#dfe8f3;
+}
+
+.footer-middle h2{
+font-size:48px;
+color:#0a2e5c;
+margin-bottom:20px;
+text-align:left;
+}
+
+.footer-middle h3,
+
+.footer-right h3{
+color:#0a2e5c;
+font-size:30px;
+}
+.footer-middle{
+display:flex;
+flex-direction:column;
+color:#dfe8f3;
+}
+
+.footer-middle a{
+color:white;
+text-decoration:none;
+margin-bottom:15px;
+font-size:18px;
+transition:.3s;
+color:#dfe8f3;
+}
+
+.footer-middle p{
+color:#555;
+font-size:18px;
+line-height:1.8;
+}
+
+.footer-middle a:hover{
+font-size:20px;
+color:#ff5a0a;
+text-decoration:none;
+transition:.3s;
+}
+.social-icons{
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.social-icons a{
+color:#ff6b00;
+font-size:30px;
+}
+
+.social-icons a:hover{
+color:#0a2e5c;
+}
+
+}
+@media(max-width:900px){
+
+.footer-container{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.footer-left h2{
+font-size:34px;
+}
+
+.social-footer{
+padding:50px 25px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+<nav class="navbar">
+<div class="logo-box">
+<img src="{{ url_for('static', filename='images/logo.png') }}">
+<h2>SEC</h2>
+</div>
+
+<a href="{{ url_for('home') }}">Home</a>
+<a href="{{ url_for('about') }}">About Us</a>
+<a href="{{ url_for('founders') }}">Founders</a>
+<a href="{{ url_for('courses') }}">Courses</a>
+<a href="{{ url_for('why') }}">Why Choose Us</a>
+<a href="{{ url_for('toppers') }}">Toppers</a>
+<a href="{{ url_for('seminars') }}">Seminars</a>
+<a href="{{ url_for('picnic') }}">Picnic</a>
+
+<a href="https://www.facebook.com/share/1827FqXruV/" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/srijan__consultancy__?igsh=MWZ4aWZ6eHVsYmxjcQ==" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://whatsapp.com/channel/0029VbAJwvVICVfm34CIQC1h" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</div>
+
+</div>
+
+</nav>
+
+<header>
+
+<img src="static/images/logo.png" alt="SEC Logo">
+
+<h1>SRIJAN EDUCATION CONSULTANCY</h1>
+
+<p>"SAPNE TUM DEKHO, PURA HUM KARENGE"</p>
+
+</header>
+
+<section id="about" class="animate">
+
+<h2>About Us</h2>
+
+<div class="about">
+
+<p><strong>Established in 2016</strong></p>
+
+<p><b>
+
+Srijan Education Consultancy is a trusted career guidance and educational consulting organization committed to helping students achieve their academic and professional goals. Since 2016, we have guided thousands of students toward the right courses, colleges, and successful careers.
+</b></p>
+
+<h3>Our Mission</h3>
+
+<p>
+<b>To provide honest counselling, expert educational guidance, and complete support that empowers students to make informed decisions and build a successful future.
+</b></p>
+
+</div>
+
+</section>
+
+<section class="founders-section">
+
+<h2>Our Founders</h2>
+<p class="subtitle">The Vision Behind Srijan Education Consultancy</p>
+
+<!-- Founder -->
+
+<div class="founder-row">
+
+<div class="founder-photo">
+<img src="{{ url_for('static',filename='images/founder1.jpg') }}">
+</div>
+
+<div class="founder-content">
+
+<h3>Drx. Jayprakash Umashankar Prajapati</h3>
+
+<h4>Founder & Director</h4>
+
+<div class="qualification">
+M.Sc • B.Ed • M.Pharm
+</div>
+
+<div class="typing">
+<span id="founder-text"></span>
+</div>
+
+</div>
+
+</div>
+
+<!-- Co Founder -->
+
+<div class="founder-row reverse">
+
+    <div class="founder-content">
+
+        <h3>Drx. Harshit Ramprakash Singh</h3>
+
+        <h4>Co-Founder</h4>
+
+        <div class="qualification">
+            D.Pharm • BBA
+        </div>
+
+        <div class="typing">
+            <span id="cofounder-text"></span>
+        </div>
+
+    </div>
+
+    <div class="founder-photo">
+        <img src="{{ url_for('static',filename='images/founder2.jpg') }}">
+    </div>
+
+</div>
+
+</div>
+</section>
+
+<section id="courses-section" class="animate">
+
+<h2>Courses & Services</h2>
+
+<div class="services">
+
+<div class="service-box">
+<h3>Paramedical</h3>
+<ul>
+<li>D Pharma</li>
+<li>B Pharma</li>
+<li>BSc Nursing</li>
+<li>GNM</li>
+<li>Physiotherapy</li>
+<li>BMLT / DMLT</li>
+<li>Radiology</li>
+</ul>
+</div>
+
+<div class="service-box">
+<h3>Medical</h3>
+<ul>
+<li>MBBS</li>
+<li>BAMS</li>
+<li>BUMS</li>
+<li>BHMS</li>
+</ul>
+</div>
+
+<div class="service-box">
+<h3>Engineering</h3>
+<ul>
+<li>B.Tech</li>
+<li>Civil Engineering</li>
+<li>Electrical Engineering</li>
+<li>Electronics Engineering</li>
+<li>Biotechnology</li>
+<li>Aerospace Engineering</li>
+<li>Chemical Engineering</li>
+<li>ETC</li>
+</ul>
+</div>
+
+<div class="service-box">
+<h3>Other Services</h3>
+<ul>
+<li>Admission Guidance</li>
+<li>Career Counselling</li>
+<li>College Selection</li>
+<li>Scholarship Support</li>
+<li>Placement Guidance</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section class="event-section animate">
+    <h2>Seminars</h2>
+    <div class="slider">
+        <div class="picnic-track">
+
+            <!-- Original -->
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem1.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem2.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem4.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem5.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem6.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem19.jpg') }}">
+</div>
+
+
+            <!-- Duplicate -->
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem1.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem2.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem4.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem5.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem6.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/sem19.jpg') }}">
+</div>
+
+        </div>
+    </div>
+</section>
+
+<section class="event-section animate">
+    <h2>Picnic</h2>
+
+    <div class="slider">
+        <div class="picnic-track">
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p1.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p2.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p4.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p3.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p6.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p10.jpg') }}">
+</div>
+
+
+            <!-- Duplicate -->
+
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p1.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p2.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p4.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p3.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p6.jpg') }}">
+</div>
+
+<div class="slide">
+    <img src="{{ url_for('static',filename='images/p10.jpg') }}">
+</div>
+
+        </div>
+    </div>
+</section>
+
+<section id="why-section" class="animate">
+
+<h2>Why Choose Us</h2>
+<div class="why">
+
+<div class="feature">
+<div class="icon">🎓</div>
+<div class="text">
+<h3>Expert Counselling</h3>
+<p>Professional guidance from experienced education consultants.</p>
+</div>
+</div>
+
+<div class="feature">
+<div class="icon">📚</div>
+<div class="text">
+<h3>Course Insights</h3>
+<p>Complete information about courses, colleges and eligibility.</p>
+</div>
+</div>
+
+<div class="feature">
+<div class="icon">🏫</div>
+<div class="text">
+<h3>College Guidance</h3>
+<p>Helping students choose the right college for their future.</p>
+</div>
+</div>
+
+<div class="feature">
+<div class="icon">💰</div>
+<div class="text">
+<h3>Scholarship Information</h3>
+<p>Updated scholarship and financial assistance guidance.</p>
+</div>
+</div>
+
+<div class="feature">
+<div class="icon">🚀</div>
+<div class="text">
+<h3>Career Opportunities</h3>
+<p>Career planning and future growth opportunities.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="work-process animate">
+
+<h2>Our Admission Process</h2>
+
+<div class="process-wrapper">
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-icon">📞</div>
+<div class="timeline-content">
+<h3>CONTACT US</h3>
+<p>Contact our team and share your educational goals. We understand your requirements and guide you accordingly.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">📝</div>
+<div class="timeline-content">
+<h3>CAREER COUNSELLING</h3>
+<p>Our experts provide detailed counselling and help you choose the best course and college.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">🎓</div>
+<div class="timeline-content">
+<h3>ADMISSION PROCESS</h3>
+<p>Complete admission guidance including forms, documentation, and college selection.</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">✅</div>
+<div class="timeline-content">
+<h3>ADMISSION CONFIRMED</h3>
+<p>Secure your seat and begin your journey towards a successful career.</p>
+</div>
+</div>
+
+</div>
+
+<div class="process-info">
+
+<div class="info-block">
+<h3>Why Choose Srijan Education Consultancy?</h3>
+<p>
+Since 2016, Srijan Education Consultancy has helped thousands of students secure admissions in Medical, Engineering, Pharmacy, Nursing, and Paramedical courses.
+</p>
+</div>
+
+<div class="info-block">
+<h3>Complete Student Support</h3>
+<p>
+We provide end-to-end support including counselling, admission assistance, scholarship guidance, and career planning.
+</p>
+</div>
+
+</div>
+
+</div>
+<div class="timeline-item">
+<div class="timeline-icon">💰</div>
+<div class="timeline-content">
+<h3>GET UPTO ₹5 LAKHS SCHOLARSHIP</h3>
+<p>
+Eligible students can receive scholarship benefits up to ₹5 Lakhs through our partner institutions and special programs.
+</p>
+</div>
+</div>
+
+</section>
+
+<section class="social-footer">
+
+<div class="footer-container">
+
+<div class="footer-middle">
+<h2>Let's Build Your Future With Srijan Education Consultancy</h2>
+<p>
+Your trusted partner for admissions, career guidance,
+scholarships, and educational success.
+</p>
+</div>
+
+<div class="footer-right">
+<h3>Follow Us</h3>
+
+<div class="social-icons">
+<a href="https://www.facebook.com/share/1827FqXruV/" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/srijan__consultancy__?igsh=MWZ4aWZ6eHVsYmxjcQ==" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://whatsapp.com/channel/0029VbAJwvVICVfm34CIQC1h" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+</div>
+
+
+</section>
+
+<div class="contact-footer">
+    <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:srijaneducationconsultancy@gmail.com">
+            srijaneducationconsultancy@gmail.com
+        </a>
+    </p>
+
+    <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:7264059650">
+            +91 7264059650
+        </a>
+    </p>
+</div>
+
+
+<footer>
+© 2026 Srijan Education Consultancy | All Rights Reserved
+</footer>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach((entry)=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{
+threshold:0.2
+});
+
+document.querySelectorAll(".animate").forEach((el)=>{
+observer.observe(el);
+});
+
+window.scrollTo({
+top:0,
+left:0,
+behavior:"instant"
+});
+
+});
+</script>
+<script>
+
+const founderMessage=
+`Hello!
+
+I am Drx. Jayprakash Umashankar Prajapati,
+Founder & Director of Srijan Education Consultancy.
+
+Since 2016, my mission has been to guide students towards quality education and successful careers.`;
+
+const cofounderMessage=
+`Hello!
+
+I am Drx. Harshit Ramprakash Singh,
+Co-Founder of Srijan Education Consultancy.
+
+My goal is to provide honest counselling, admission support, and educational guidance to every student.
+
+Together, we help students build successful futures.
+
+"My Commitment : Sapne Tum Dekho, Pura Hum Karenge."`;
+
+let i=0;
+
+function typeFounder(){
+
+if(i<founderMessage.length){
+
+document.getElementById("founder-text").innerHTML+=founderMessage.charAt(i);
+
+i++;
+
+setTimeout(typeFounder,35);
+
+}
+
+}
+
+let j=0;
+
+function typeCo(){
+
+if(j<cofounderMessage.length){
+
+document.getElementById("cofounder-text").innerHTML+=cofounderMessage.charAt(j);
+
+j++;
+
+setTimeout(typeCo,35);
+
+}
+
+}
+
+window.onload=function(){
+
+typeFounder();
+
+setTimeout(typeCo,4000);
+
+};
+
+</script>
+
+</body>
+</html>

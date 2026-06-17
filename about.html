@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | Srijan Education Consultancy</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+line-height:1.8;
+}
+
+/* Navbar */
+
+.navbar{
+background:#0b2f63;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar{
+background:#08264b;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-box img{
+width:60px;
+height:60px;
+border-radius:10px;
+}
+
+.logo-box h2{
+color:white;
+font-size:30px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+}
+
+.navbar a:hover{
+color:#ffd700;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+background:#0a2e5c;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 50px;
+z-index:1000;
+box-shadow:0 2px 15px rgba(0,0,0,.2);
+}
+
+.navbar{
+    background:#08264b;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    position:relative;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0a2e5c;
+    padding: 24px 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* 🔥 important */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 2500;
+    white-space: nowrap; /* 🔥 THIS FIXES TOPPERS + SEMINARS */
+}
+
+
+
+.back-home{
+    text-align:center;
+    margin-top:40px;
+}
+
+.back-home a{
+    background:#0b2f63;
+    color:white;
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.back-home a:hover{
+    background:#ff9800;
+    transform:translateY(-3px);
+}
+
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:8px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#ff9800;
+}
+
+/* Hero */
+
+.hero{
+height:350px;
+background:
+linear-gradient(rgba(11,47,99,.75),rgba(11,47,99,.75)),
+url('/static/images/banner.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:24px;
+font-style:italic;
+}
+
+/* Content */
+
+.container{
+width:85%;
+margin:auto;
+padding:60px 0;
+}
+
+.section{
+background:white;
+padding:50px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+margin-bottom:40px;
+}
+
+.section h2{
+color:#0b2f63;
+font-size:40px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.section p{
+font-size:19px;
+text-align:justify;
+margin-bottom:20px;
+}
+
+.highlight{
+color:#0b2f63;
+font-weight:bold;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:#0b2f63;
+color:white;
+padding:35px;
+text-align:center;
+border-radius:15px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+font-size:40px;
+color:#ffb300;
+}
+
+.card p{
+text-align:center;
+font-size:18px;
+}
+
+/* Footer */
+
+footer{
+background:#0a2e5c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:28px;
+}
+
+.feature{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+.social-footer{
+background:#0a355d;
+padding:70px 80px;
+color:white;
+border-top:1px solid rgba(255,255,255,.15);
+}
+
+.footer-container{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:80px;
+align-items:start;
+}
+
+.footer-left h2{
+font-size:48px;
+font-weight:300;
+line-height:1.2;
+margin-bottom:20px;
+color:#ff6b00;
+text-shadow:0 0 10px rgba(255,107,0,.4);
+}
+
+.footer-left p{
+font-size:18px;
+line-height:1.8;
+color:#dfe8f3;
+}
+
+.footer-middle h3,
+.footer-right h3{
+margin-bottom:25px;
+font-size:26px;
+color:#dfe8f3;
+}
+
+.footer-middle{
+display:flex;
+flex-direction:column;
+color:#dfe8f3;
+}
+
+.footer-middle a{
+color:white;
+text-decoration:none;
+margin-bottom:15px;
+font-size:18px;
+transition:.3s;
+color:#dfe8f3;
+}
+
+.footer-middle a:hover{
+color:#ff5a0a;
+padding-left:8px;
+color:#dfe8f3;
+}
+.social-icons{
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.social-icons a{
+font-size:20px;
+color:#ff5a0a;
+text-decoration:none;
+transition:.3s;
+}
+
+.social-icons a:hover{
+transform:translateY(-3px);
+color:white;
+}
+@media(max-width:900px){
+
+.footer-container{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.footer-left h2{
+font-size:34px;
+}
+
+.social-footer{
+padding:50px 25px;
+}
+
+}
+
+footer{
+background:#0b2f63;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:40px;
+}
+
+footer i{
+margin:0 10px;
+font-size:22px;
+cursor:pointer;
+transition:.3s;
+}
+
+footer i:hover{
+color:#ff9800;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section{
+padding:25px;
+}
+
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+.animate{
+opacity:0;
+transform:translateY(50px);
+transition:all .3s ease;
+}
+
+.animate.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.founder-card,
+.service-box,
+.feature,
+.preview-card{
+transition:all .4s ease;
+}
+
+.founder-card:hover,
+.service-box:hover,
+.feature:hover,
+.preview-card:hover{
+transform:translateY(-10px);
+box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+header img{
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+header{
+animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(60px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f6f8;
+color:#333;
+}
+
+.login-btn,
+.register-btn{
+background:white;
+color:#0a2e5c !important;
+padding:10px 18px;
+border-radius:8px;
+font-weight:bold;
+margin-left:10px;
+text-decoration:none;
+transition:.3s;
+}
+
+.login-btn:hover,
+.register-btn:hover{
+background:#ffd700;
+transform:translateY(-2px);
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#08264b;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-box img{
+width:60px;
+height:60px;
+border-radius:10px;
+}
+
+.logo-box h2{
+color:white;
+font-size:30px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:bold;
+}
+
+.navbar a:hover{
+color:#ffd700;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+background:#0a2e5c;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 50px;
+z-index:1000;
+box-shadow:0 2px 15px rgba(0,0,0,.2);
+}
+
+.navbar{
+    background:#08264b;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    position:relative;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0a2e5c;
+    padding: 24px 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* 🔥 important */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 2500;
+    white-space: nowrap; /* 🔥 THIS FIXES TOPPERS + SEMINARS */
+}
+
+.auth-area{
+    display:flex;
+    gap:12px;
+    position:absolute;
+    right:25px;
+    top:10px;
+}
+
+.signup-btn{
+    background:#6d28d9;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login-btn-new{
+    background:#6d28d9;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#0a2e5c,#123f7a);
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+header img{
+width:140px;
+height:140px;
+object-fit:contain;
+background:white;
+padding:10px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+font-style:italic;
+}
+
+/* SECTION */
+
+section{
+max-width:1100px;
+margin:30px auto;
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,0,0,0.08);
+}
+
+section h2{
+text-align:center;
+color:#0a2e5c;
+margin-bottom:25px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:850px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+}
+
+.about h3{
+color:#0a2e5c;
+margin-top:20px;
+}
+
+/* FOUNDERS */
+
+.founders{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.founder-card{
+width:280px;
+text-align:center;
+}
+
+.founder-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.founder-card h3{
+margin-top:15px;
+color:#0a2e5c;
+}
+
+/* COURSES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+}
+
+.service-box{
+background:#f8f9fb;
+padding:20px;
+border-left:5px solid #0a2e5c;
+border-radius:10px;
+}
+
+.service-box h3{
+color:#0a2e5c;
+margin-bottom:10px;
+}
+
+.service-box ul{
+padding-left:20px;
+}
+
+/* WHY CHOOSE US */
+
+.why{
+max-width:800px;
+margin:auto;
+}
+
+.feature{
+display:flex;
+align-items:center;
+gap:20px;
+background:#f8f9fb;
+padding:18px;
+margin-bottom:15px;
+border-radius:12px;
+}
+
+.icon{
+width:70px;
+height:70px;
+background:#0a2e5c;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+color:white;
+flex-shrink:0;
+}
+
+.text h3{
+color:#0a2e5c;
+margin-bottom:5px;
+}
+
+/* TOPPERS & SEMINARS */
+
+.preview-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.preview-card{
+background:#f8f9fb;
+padding:20px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.preview-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.preview-card h3{
+color:#0a2e5c;
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 22px;
+background:#0a2e5c;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#123f7a;
+}
+.work-process{
+background:#0a355d;
+padding:90px 70px;
+color:white;
+margin-top:50px;
+}
+
+.work-process h2{
+text-align:center;
+font-size:42px;
+margin-bottom:70px;
+color:white;
+}
+
+.process-wrapper{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:100px;
+max-width:1400px;
+margin:auto;
+}
+
+.timeline{
+position:relative;
+}
+
+.timeline::before{
+content:'';
+position:absolute;
+left:34px;
+top:20px;
+bottom:20px;
+width:2px;
+border-left:2px dotted rgba(255,255,255,.4);
+}
+
+.timeline-item{
+display:flex;
+align-items:flex-start;
+gap:30px;
+margin-bottom:70px;
+position:relative;
+}
+
+.timeline-icon{
+width:70px;
+height:70px;
+background:#ff5a0a;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+z-index:2;
+box-shadow:0 0 25px rgba(255,90,10,.4);
+transition:.4s;
+}
+
+.timeline-item:hover .timeline-icon{
+transform:scale(1.1);
+}
+
+.timeline-content h3{
+font-size:18px;
+font-weight:700;
+margin-bottom:10px;
+text-transform:uppercase;
+}
+
+.timeline-content p{
+font-size:17px;
+line-height:1.8;
+color:#f0f0f0;
+max-width:500px;
+}
+
+.process-info{
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+.info-block{
+margin-bottom:80px;
+}
+
+.info-block h3{
+font-size:40px;
+font-weight:400;
+margin-bottom:25px;
+line-height:1.4;
+}
+
+.info-block p{
+font-size:18px;
+line-height:2;
+color:#f0f0f0;
+}
+
+.info-block:hover{
+transform:translateY(-5px);
+transition:.4s;
+}
+
+/* Fade Up Animation */
+
+.animate{
+opacity:0;
+transform:translateY(80px);
+transition:all .8s ease;
+}
+
+.animate.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.process-wrapper{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.work-process{
+padding:60px 25px;
+}
+
+.work-process h2{
+font-size:30px;
+}
+
+.info-block h3{
+font-size:28px;
+}
+
+.timeline-content p{
+font-size:15px;
+}
+
+}
+/* FOOTER */
+
+footer{
+background:#0a2e5c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:28px;
+}
+
+.feature{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+.social-footer{
+background:#0a355d;
+padding:70px 80px;
+color:white;
+border-top:1px solid rgba(255,255,255,.15);
+}
+
+.footer-container{
+max-width:1400px;
+margin:auto;
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:80px;
+align-items:start;
+}
+
+.footer-left h2{
+font-size:48px;
+font-weight:300;
+line-height:1.2;
+margin-bottom:20px;
+color:#ff6b00;
+text-shadow:0 0 10px rgba(255,107,0,.4);
+}
+
+.footer-left p{
+font-size:18px;
+line-height:1.8;
+color:#dfe8f3;
+}
+
+.footer-middle h3,
+.footer-right h3{
+margin-bottom:25px;
+font-size:26px;
+color:#dfe8f3;
+}
+
+.footer-middle{
+display:flex;
+flex-direction:column;
+color:#dfe8f3;
+}
+
+.footer-middle a{
+color:white;
+text-decoration:none;
+margin-bottom:15px;
+font-size:18px;
+transition:.3s;
+color:#dfe8f3;
+}
+
+.footer-middle a:hover{
+font-size:20px;
+color:#ff5a0a;
+text-decoration:none;
+transition:.3s;
+}
+.social-icons{
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.social-icons a{
+font-size:20px;
+color:#ff5a0a;
+text-decoration:none;
+transition:.3s;
+}
+
+.social-icons a:hover{
+transform:translateY(-3px);
+color:white;
+}
+@media(max-width:900px){
+
+.footer-container{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.footer-left h2{
+font-size:34px;
+}
+
+.social-footer{
+padding:50px 25px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+<div class="logo-box">
+<img src="{{ url_for('static', filename='images/logo.png') }}">
+<h2>SEC</h2>
+</div>
+
+<a href="{{ url_for('home') }}">Home</a>
+<a href="{{ url_for('about') }}">About Us</a>
+<a href="{{ url_for('founders') }}">Founders</a>
+<a href="{{ url_for('courses') }}">Courses</a>
+<a href="{{ url_for('why') }}">Why Choose Us</a>
+<a href="{{ url_for('toppers') }}">Toppers</a>
+<a href="{{ url_for('seminars') }}">Seminars</a>
+<a href="{{ url_for('picnic') }}">Picnic</a>
+
+<a href="https://www.facebook.com/share/1827FqXruV/" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/srijan__consultancy__?igsh=MWZ4aWZ6eHVsYmxjcQ==" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://whatsapp.com/channel/0029VbAJwvVICVfm34CIQC1h" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+</div>
+
+</div>
+
+</nav>
+
+<!-- Main Content -->
+<section class="about-section animate">
+<div class="container">
+
+<div class="section">
+
+<h2>Who We Are</h2>
+
+<p>
+<span class="highlight">Srijan Education Consultancy (SEC)</span> is a trusted educational consultancy and career guidance organization established in 2016 with a mission to help students achieve their academic and professional dreams. Over the years, SEC has become one of the most reliable names in education counselling, admission guidance, career planning, scholarship assistance, and student support services.
+</p>
+
+<p>
+We understand that choosing the right course, college, or career path is one of the most important decisions in a student's life. Our team works closely with students and parents to understand their goals, interests, strengths, and future aspirations. Through expert counselling and personalized guidance, we help students make informed decisions that lead to successful careers and bright futures.
+</p>
+
+<p>
+Since our establishment, thousands of students have benefited from our services and secured admissions in reputed colleges and universities across India. Our dedication, transparency, and student-first approach have helped us build a strong reputation among students, parents, educational institutions, and industry professionals.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Our Mission</h2>
+
+<p>
+Our mission is to provide honest, reliable, and professional educational guidance to students from all backgrounds. We aim to bridge the gap between students and quality education by offering accurate information, career counselling, admission support, scholarship opportunities, and complete assistance throughout the educational journey.
+</p>
+
+<p>
+We believe that every student possesses unique talents and potential. Our goal is to empower students by helping them discover their strengths, choose the right career path, and gain access to quality education that aligns with their ambitions.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Why Choose SEC?</h2>
+
+<p>
+At Srijan Education Consultancy, we focus on delivering genuine guidance and long-term support rather than simply processing admissions. We maintain strong relationships with educational institutions and provide students with updated information regarding admissions, entrance exams, scholarships, educational trends, and career opportunities.
+</p>
+
+<p>
+Our experienced counsellors offer personalized attention to every student, ensuring that each individual receives guidance tailored to their specific goals. We also organize educational seminars, career awareness programs, scholarship drives, and student development activities throughout the year.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Our Achievements</h2>
+
+<div class="stats">
+
+<div class="card">
+<h3>1000+</h3>
+<p>Students Guided</p>
+</div>
+
+<div class="card">
+<h3>100+</h3>
+<p>Partner Colleges</p>
+</div>
+
+<div class="card">
+<h3>50+</h3>
+<p>Educational Seminars</p>
+</div>
+
+<div class="card">
+<h3>2016</h3>
+<p>Established</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Our Vision</h2>
+
+<p>
+Our vision is to become India's most trusted educational consultancy by continuously supporting students in achieving academic excellence and professional success. We strive to create a future where every student has access to the right educational opportunities and receives the guidance needed to transform their dreams into reality.
+</p>
+
+<p>
+At Srijan Education Consultancy, we are committed to shaping futures, creating opportunities, and inspiring success for generations to come.
+</p>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+<h3>Srijan Education Consultancy</h3>
+<p>Guidance • Expertise • Success</p>
+
+<br>
+
+<a href="https://www.facebook.com/share/1827FqXruV/" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/srijan__consultancy__?igsh=MWZ4aWZ6eHVsYmxjcQ==" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://whatsapp.com/channel/0029VbAJwvVICVfm34CIQC1h" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<div class="back-home">
+  <div class="back-home">
+
+<a href="{{ url_for('home') }}">
+← Back to Home
+</a>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+const observer = new IntersectionObserver((entries)=>{
+entries.forEach((entry)=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+},{
+threshold:0.2
+});
+
+document.querySelectorAll(".animate").forEach((el)=>{
+observer.observe(el);
+});
+
+window.scrollTo({
+top:0,
+left:0,
+behavior:"instant"
+});
+
+});
+</script>
+
+<footer>
+© 2026 Srijan Education Consultancy | All Rights Reserved
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+document.querySelectorAll(".animate").forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
